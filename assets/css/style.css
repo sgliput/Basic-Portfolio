@@ -45,6 +45,17 @@ a{
     text-decoration: none;
 }
 
+a.navlink:link { color: #777777; }
+a.navlink:visited { color: gray; }
+a.navlink:hover { 
+    color: #ffffff;
+    font-style: italic; 
+    font-size: 1.1em;
+    padding: 8px;
+    background-color: #4aaaa5;
+}
+a.navlink:active { color: #4aaaa5; }
+
 .main{
     clear:both;
     margin: 0 25%;
@@ -99,12 +110,12 @@ td{
    padding: 8px 16px 8px 0px;   
 }
 
-.thumbnail{
+.thumbnail-1{
     position: relative;
     bottom: 30px;
 }
 
-.thumbnail2{
+.thumbnail-2{
     position: relative;
     bottom: 60px;
 }
@@ -154,7 +165,15 @@ td{
     padding-top: 8px;
 }
 
+.thumbnail:hover .thumbnail-0, .thumbnail:hover .thumbnail-1, .thumbnail:hover .thumbnail-2{
+    outline: 5px solid #4aaaa5;
+    outline-offset: 1px;
+  }
+
 footer{
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
     text-align: center;
     height: 50px;
     width: 100%;
